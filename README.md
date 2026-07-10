@@ -50,8 +50,11 @@ A Mealy Finite State Machine (FSM) is a digital logic model where the outputs ar
 ## Traffic Light Controller
 
 A Traffic Light Controller is a real-world application of a Finite State Machine (FSM). 
+
 It is a digital logic system designed to sequence through a specific set of states (the lights) safely and predictably.
+
 The system has distinct "modes" it can be in. For your project, these are State 0 (Red), State 1 (Green), and State 2 (Yellow).
+
 The controller evaluates its current state and moves to the next state every time the clock ticks (the "posedge" or positive edge).Depending strictly on what state the machine is currently in, it outputs a specific binary signal to turn the physical LEDs on or off.
 
 <img width="2540" height="2604" alt="Traffic Light Controller" src="https://github.com/user-attachments/assets/0ce83893-4070-4909-a532-5fa531e2503c" />
@@ -68,8 +71,11 @@ The controller evaluates its current state and moves to the next state every tim
 ## Sequence Detector
 
 A sequence detector is a type of sequential digital circuit designed to recognize a specific pattern of bits (0s and 1s) within a continuous stream of input data.The circuit has a finite number of "states."
+
 Each state represents how much of the target sequence has been successfully detected so far. For example, in your 1011 detector, State 0 means nothing matched, State 1 means "1" is matched, State 2 means "10" is matched, and so on.
+
 The circuit operates on a clock signal. With every active clock edge, it reads the current input bit and decides whether to move forward to the next state (if the bit matches the sequence) or fall back to an earlier state (if the sequence breaks).
+
 When the circuit reaches the final state that completes the target sequence, it drives an output signal high (usually to 1) for that clock cycle to signal a successful detection
 
 <img width="4096" height="2532" alt="Sequence Detector" src="https://github.com/user-attachments/assets/af97d152-6fa6-4c2c-9cb0-de9cdb80881b" />
